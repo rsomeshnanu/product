@@ -15,7 +15,10 @@ public class TestController {
 	
 	@PreAuthorize("hasRole('MANAGER')")
 	@GetMapping("test1")
+	
 	public String test1() {
+		
+		//method logic
 		return "Test1";
 	}
 	@PreAuthorize("hasRole('ADMIN')")
