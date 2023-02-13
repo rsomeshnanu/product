@@ -24,6 +24,8 @@ public class TestController {
 	@PreAuthorize("hasRole('ADMIN')")
 	@GetMapping("test2")
 	public String test2() {
+		
+		//code
 		return "Test2";
 	}
 }
